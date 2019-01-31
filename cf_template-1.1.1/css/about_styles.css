@@ -1,0 +1,44 @@
+/* * { border: 1px solid red; } */
+* { box-sizing: border-box; }
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+.header h1 {
+  text-align: center;
+}
+.column {
+  display: inline-block;
+  float: left;
+}
+
+.image {
+  position: relative;
+  top: 80px;
+  width: 30%;
+}
+
+.image img {
+  width: 100%;
+}
+
+.intro {
+  padding: 0 35px;
+  width: 50%;
+}
+
+.skill {
+  padding: 0 35px;
+  width: 20%;
+}
+
+.main-text {
+  clear: both;
+  padding-top: 60px;
+}
+
+#skill-list {padding-left: 15px}
+
+h1,h2,h3 {color: #f46242;
+}
