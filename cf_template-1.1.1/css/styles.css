@@ -1,0 +1,15 @@
+/* Custom styles for this template go here. */
+.jumbotron{
+  background-image: url("../img/landscape.jpg");
+  background-size: contain;
+  /* background-position: center; */
+}
+
+.jumbotron p {
+  color: white;
+}
+  div {font-family:  Georgia, Serif;}
+  .display-4 {color: #f46242;
+  }
+  .lead {color: #f46242;
+  }
