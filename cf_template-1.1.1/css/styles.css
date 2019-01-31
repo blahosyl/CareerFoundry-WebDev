@@ -1,7 +1,7 @@
 /* Custom styles for this template go here. */
 .jumbotron{
   background-image: url("../img/landscape.jpg");
-  background-size: contain;
+  background-size: cover;
   /* background-position: center; */
 }
 
