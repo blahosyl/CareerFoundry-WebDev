@@ -25,12 +25,12 @@
 
 .intro {
   padding: 0 35px;
-  width: 50%;
+  width: 40%;
 }
 
 .skill {
   padding: 0 35px;
-  width: 20%;
+  width: 30%;
 }
 
 .main-text {
@@ -38,7 +38,28 @@
   padding-top: 60px;
 }
 
-#skill-list {padding-left: 15px}
+#skill-list {margin-left: 50px}
 
-h1,h2,h3 {color: #f46242;
+
+/*Typography*/
+h1,
+h2,
+h3 {
+  font-family: Futura, Helvetica, Arial, sans-serif;
+}
+
+p,
+li {
+  font-family: Georgia, Lucida Bright, serif;
+}
+
+.intro p {
+  font-size: 3em;
+  font-weight: 100;
+  -webkit-margin-before: 0;
+}
+
+.skill h3 {
+text-align: center;
+text-transform: uppercase;
 }
