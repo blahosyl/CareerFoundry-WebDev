@@ -1,0 +1,123 @@
+/* * { border: 1px solid red; } */
+* { box-sizing: border-box; }
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+.header h1 {
+  text-align: center;
+}
+.column {
+  display: inline-block;
+  float: left;
+}
+
+.image {
+  position: relative;
+  top: 80px;
+  width: 30%;
+}
+
+.image img {
+  width: 100%;
+}
+
+.intro {
+  padding: 0 35px;
+  width: 40%;
+}
+
+.skill {
+  padding: 25 35px;
+  width: 30%;
+}
+
+.main-text {
+  clear: both;
+  padding-top: 60px;
+}
+
+#skill-list {margin-left: 50px}
+
+
+/*Typography*/
+h1,
+h2,
+h3,
+.lead {
+  font-family: Nunito, Helvetica, Arial, sans-serif;
+}
+
+p,
+li {
+  font-family: Georgia, Lucida Bright, serif;
+}
+
+.intro p {
+  font-size: 3em;
+  font-weight: 100;
+  -webkit-margin-before: 0;
+}
+
+.skill h3 {
+text-align: center;
+text-transform: uppercase;
+}
+
+/* Custom styles for this template go here. */
+.jumbotron{
+  background-image: url("../img/berlin.jpg");
+  background-size: cover;
+  background-position: center;
+  /* background-position: center; */
+}
+
+
+/*Colours*/
+:root {
+  --bright: #F0471A;
+  --dark: #3b0c00;
+  --med-dark: #bc400f;
+  /* --med-dark: #73240f; */
+  /* --med-light: #e18e78; */
+  --med-light: #e38965;
+  /* --light: #ffe6df; */
+  --light: #fffdfc;
+}
+
+body {
+background: var(--light);
+  color: var(--dark);
+}
+
+.skill {
+  background: var(--med-dark);
+  color: var(--light);
+}
+
+.btn {
+  background: var(--med-dark);
+  color: var(--light);
+  border: var(--dark);
+}
+
+.btn:hover {
+  background: var(--bright);
+  color: var(--light);
+  border: var(--dark);
+}
+
+
+.jumbotron p {
+  color: white;
+}
+  div {font-family:  Georgia, Serif;}
+
+.display-4 {color: var(--bright);
+  font-weight: 200;
+  font-weight: bold;
+}
+
+.lead {color: #f46242;
+  }
