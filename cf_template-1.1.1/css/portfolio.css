@@ -9,12 +9,12 @@
   text-align: center;
 }
 .column {
-  display: inline-block;
+    /* display: inline-block; */
   float: left;
 }
 
 .image {
-  position: relative;
+  /* position: relative; */
   top: 80px;
   width: 30%;
 }
@@ -23,22 +23,31 @@
   width: 100%;
 }
 
-.intro {
-  padding: 0 35px;
-  width: 40%;
-}
 
 .skill {
-  padding: 25 35px;
-  width: 30%;
+  width: 33%;
+float:right;
+line-height: 1.5;
+}
+
+.linkedin,
+.email,
+.phone {
+  width: 33%;
+  line-height: 1.5;
+  text-align: center;
 }
 
 .main-text {
   clear: both;
-  padding-top: 60px;
+  padding-top: 30px;
 }
 
-#skill-list {margin-left: 50px}
+.sidelinks {
+  padding-left: 10px;
+}
+
+/* #skill-list {margin-left: 30px} */
 
 
 /*Typography*/
@@ -65,12 +74,10 @@ text-align: center;
 text-transform: uppercase;
 }
 
-/* Custom styles for this template go here. */
 .jumbotron{
   background-image: url("../img/berlin.jpg");
   background-size: cover;
   background-position: center;
-  /* background-position: center; */
 }
 
 
@@ -96,6 +103,21 @@ background: var(--light);
   color: var(--light);
 }
 
+.linkedin {
+  background: var(--med-dark);
+  color: var(--light);
+}
+
+.email {
+  background: var(--bright);
+  color: var(--light);
+}
+
+.phone {
+  background: var(--med-light);
+  color: var(--light);
+}
+
 .btn {
   background: var(--med-dark);
   color: var(--light);
@@ -112,6 +134,18 @@ background: var(--light);
 .jumbotron p {
   color: white;
 }
+
+.jumbotron a {
+  color: var(--bright);
+  font-family: Nunito, Helvetica, Arial, sans-serif;
+}
+
+.linkedin a,
+.email a {
+  color: var(--light);
+  font-family: Nunito, Helvetica, Arial, sans-serif;
+}
+
   div {font-family:  Georgia, Serif;}
 
 .display-4 {color: var(--bright);
