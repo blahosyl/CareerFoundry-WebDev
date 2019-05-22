@@ -13,14 +13,14 @@
   --light: #fffdfc;
 }
 
-.container {
+.contain {
   margin: 0 auto;
   width: 80%;
   padding: 20px
 }
 
 .content {
-  padding-top: 60px
+  padding-top: 80px
 }
 
 .nav {
@@ -53,14 +53,6 @@ nav a:hover {
   float: left;
 }
 
-.left {
-  float: left;
-}
-
-.right {
-  float: right;
-}
-
 .image {
   /* position: relative; */
   top: 80px;
@@ -84,6 +76,7 @@ line-height: 1.5;
   width: 33%;
   line-height: 1.5;
   text-align: center;
+  padding-top: 10px;
 }
 
 .skill {
@@ -189,3 +182,18 @@ background: var(--light);
 
 .lead {color: #f46242;
   }
+
+/* bootstrap accordion  */
+
+.card-header { background: var(--med-light); }
+/* .card-header button { color: #ffffff; } */
+/* .card-body { font-size: 18px; } */
+
+/* positioning of nav bar elements */
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
