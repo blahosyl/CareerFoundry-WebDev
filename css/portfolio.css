@@ -15,29 +15,28 @@
 
 .contain {
   margin: 0 auto;
-  width: 80%;
-  padding: 20px
+  padding: 20px;
 }
 
 .content {
-  padding-top: 80px
+  padding-top: 80px;
 }
 
 .nav {
   font-family: Nunito, Helvetica, Arial, sans-serif;
+  background-color: var(--med-light);
   position: fixed;
-  width: 100% !important;
   top: 0;
   left: 0;
-  background-color: var(--med-light);
+  right: 0;
 }
 
 
 nav a {
 color: var(--dark);
 transition: color 600ms;
--webkit-transition: color 600ms;//Safari
--moz-transition: color 600ms;//Safari
+-webkit-transition: color 600ms;//Safari/Chrome
+-moz-transition: color 600ms;//Firefox
 }
 
 nav a:hover {
@@ -64,24 +63,19 @@ nav a:hover {
 }
 
 
-.skill {
-  width: 33%;
-float:right;
-line-height: 1.5;
-}
-
 .linkedin,
 .email,
 .phone {
-  width: 33%;
   line-height: 1.5;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 2%;
 }
 
 .skill {
   background: var(--med-dark);
   color: var(--light);
+  width: 33%;
+  line-height: 1.5;
 }
 
 .linkedin {
@@ -128,10 +122,10 @@ li {
   -webkit-margin-before: 0;
 }
 
-.skill h3 {
-text-align: center;
+/* .skill h3 {
+/* text-align: center; */
 text-transform: uppercase;
-}
+} */
 
 .jumbotron{
   background-image: url("../img/berlin.jpg");
@@ -168,9 +162,15 @@ background: var(--light);
 
 
 .linkedin a,
-.email a {
+.email a,
+.phone a {
   color: var(--light);
   font-family: Nunito, Helvetica, Arial, sans-serif;
+}
+
+.phone a:hover {
+  text-decoration: none;
+  cursor: default;
 }
 
   div {font-family:  Georgia, Serif;}
@@ -207,6 +207,10 @@ background: var(--light);
   right: 10%; */
 }
 
+#carouselExampleIndicators {
+  padding-top: 65px;
+}
+
 .berlincar {
   color: var(--bright);
 }
@@ -229,6 +233,87 @@ background: var(--light);
   background-color: var(--bright);
 }
 
-.icon-prev {
-  color: var(--bright)!important;
+
+
+#portfolio{
+  margin-top: 5%;
 }
+
+#portfolio h2{
+text-align:center;
+}
+
+.workpics{
+  margin-top: 10%;
+}
+
+.about{
+  margin-top: 10%;
+  /* margin-left: 2%;
+  margin-right: 2%; */
+}
+
+
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+
+h1 {font-size: 30px;
+text-align: center;
+}
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {
+    h1 {font-size: 30px;}
+  }
+
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    h1 {font-size: 36px;}
+  }
+
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    h1 {font-size: 48px;}
+
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    h1 {font-size: 56px;}
+  }
+
+
+
+
+h2 {font-size: 20px;}
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {
+    h2 {font-size: 24px;}
+  }
+
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    h2 {font-size: 30px;}
+  }
+
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    h2 {font-size: 40px;}
+
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    h2 {font-size: 48px;}
+  }
+
+  /*
