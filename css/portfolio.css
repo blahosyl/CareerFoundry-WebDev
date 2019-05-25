@@ -26,6 +26,8 @@
   font-family: Nunito, Helvetica, Arial, sans-serif;
   background-color: var(--med-light);
   position: fixed;
+  display: block;
+  z-index: 999;
   top: 0;
   left: 0;
   right: 0;
