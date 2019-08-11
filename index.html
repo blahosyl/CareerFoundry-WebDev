@@ -23,32 +23,34 @@
   </head>
 
 
-  <body>
+  <body data-spy="scroll" data-target=".navbar">
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <!-- <div class="jumbotron jumbotron-fluid"> -->
-      <!-- <div class="sidelinks"> -->
-        <!-- <a href="about.html">About me</a> -->
-        <!-- </br> -->
-        <!-- <a href="contact.html">Contact</a> -->
-        <!-- </br> -->
-        <!-- <a href="faq.html">FAQ</a> -->
-      <!--</div> --><!-- /sidelinks -->
-      <!-- <div class="contain"> -->
-        <!-- <h1 class="display-4">Sylvia Blaho, PhD</h1> -->
-        <!-- <p class="lead">multilingual Technical Writer with copywriting, editing, proofreading and supervisory experience</p> -->
-      <!-- </div> --><!-- /contain -->
-    <!-- </div> --><!-- /jumbotron -->
-  <nav class="contain nav">
-      <section class="left">
-        <a href="/">CareerFoundry</a>
-      </section>
-      <section class="right">
-        <a href="about.html">About me</a>
-        <a href="contact.html">Contact</a>
-        <a href="faq.html">FAQ</a>
-      </section>
-  </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation" id="navbar-example">
+    <a class="navbar-brand" href="#">CareerFoundry</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#carouselExampleIndicators">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#faq">FAQ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#portfolio">Portfolio</a>
+      </li>
+    </ul>
+  </div>
+</nav>
   <section class="container">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -91,6 +93,141 @@
 
     </section><!--end of container-->
 
+  <div class="container" id="about">
+    <!--[if lt IE 9]>
+    <script src="dist/html5shiv.js"></script>
+    <![endif]-->
+    <section class="contain content">
+      <h1 class="pagetitle">About me</h1>
+      <div class="contain">
+        <div class="row" id="aboutrow">
+          <div class="col-6 col-md-3 about">
+            <img src="img/sp-sylvia.jpg" alt="South Park version of me" class="img-fluid profilepic">
+          </div><!--end of col 6 md4-->
+          <div class="col-6 col-md-3 skill about">
+            <h2>My Skills</h2>
+            <ul id="skill-list">
+              <li>Technical writing</li>
+              <li>Web development</li>
+              <li>Typesetting (LaTeX)</li>
+              <li>Editing, proofreading</li>
+              <li>Research</li>
+            </ul>
+          </div><!--end of col 6 md4-->
+          <div class="col-12 col-md-6 about">
+            <h2>My story</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt orci sed ipsum eleifend sagittis eu rutrum purus. Suspendisse potenti. Nulla sed lacinia odio, a viverra lorem. Fusce condimentum malesuada ligula, quis aliquet felis ultrices sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed suscipit neque. Suspendisse potenti. Curabitur tristique tellus sed purus elementum pretium. Donec in efficitur tortor, vitae viverra justo. Etiam euismod convallis orci, quis imperdiet sem pellentesque sed. Ut tortor sem, feugiat sit amet maximus ac, sagittis ac velit. Cras mi tellus, commodo ac sem in, finibus condimentum nunc. Aliquam erat volutpat. Maecenas dictum hendrerit dignissim. Vestibulum cursus vehicula mi, eget imperdiet sem ultrices sed. </p>
+          </div><!--end of col 6 md4-->
+        </div><!--end of row work-->
+      </div><!--end of contain-->
+    </section><!-- end contain -->  </div><!--end of aboutme-->
+
+  <div class="container-fluid" id="contact">
+    <section class="contain content">
+      <h1 class="pagetitle">Contact</h1>
+      <!-- <p>I'm based in Berlin, and available to collaborate with people all over the world. Get in touch to discuss how we can work together!</p> -->
+      <div class="contain">
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-4 email">
+            <h3><i class="fas fa-envelope"></i></h3>
+            <a href="mailto:sylvia.blaho@gmail.com">sylvia.blaho@gmail.com</a>
+          </div><!--email-->
+          <div class="col-12 col-md-6 col-lg-4 phone">
+            <h3><i class="fas fa-phone"></i></h3>
+            <p>+49 4444 4444</p>
+          </div><!--phone-->
+          <div class="col-12 col-md-6 col-lg-4 linkedin">
+            <h3><i class="fab fa-linkedin"></i></h3>
+            <a href="https://www.linkedin.com/in/blahosylvia/">https://www.linkedin.com/in/blahosylvia/</a>
+          </div><!--linkedin-->
+        </div><!--end of row work-->
+      </div><!--end of contain-->
+    </section><!-- end contain -->
+  </div><!--end of contact-->
+
+  <div class="container-fluid" id="faq">
+    <section class="contain content">
+      <h1 class="pagetitle">FAQ</h1>
+    </section><!-- end of content-->
+    <section class="contain">
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <i class=" fa fa-caret-right"></i>
+                Why did you become a web developer?
+              </button>
+            </h5>
+          </div>
+
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              I have been writing professionally for more than 12 years now (technical texts, white papers, copywriting) and I want the quality of the format to match the content.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <i class=" fa fa-caret-right"></i>
+                Any extras you bring to the table?
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+              With my background in teaching (university level), making software tutorials and writing SEO copy, I know how to keep design pragmatic and without unnecessary frills.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <i class=" fa fa-caret-right"></i>
+                Can I get an invoice?
+              </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+              Of course! I am registered as an EU entrepreneur with a functional VAT number, so you will receive an orderly fiscal invoice.
+            </div>
+          </div>
+          <div class="card-header" id="headingFour">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <i class=" fa fa-caret-right"></i>
+                Where are you based? I want to discuss my project in person.
+              </button>
+            </h5>
+          </div>
+          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+            <div class="card-body">
+              I am based in Berlin, the city with the perfect blend of tech, individualism, culture and innovation. That said, I'm happy to travel or even temporarily relocate for projects.
+            </div>
+          </div>
+        </div>
+        <div class="card-header" id="headingFive">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              <i class=" fa fa-caret-right"></i>
+              What is your work process?
+            </button>
+          </h5>
+        </div>
+        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+          <div class="card-body">
+            With over 5 years of experience in project management, I plan my projects in the most transparent and efficient way: I collect and confirm specifications, regularly send progress reports and immediately inform my clients of any unforeseen events.
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+    </section><!-- end of contain-->
+  </div><!--end of faq-->
 
   <div class="container" id="portfolio">
     <h2 class"subtitle">My portfolio</h2>

@@ -14,15 +14,15 @@
 }
 
 .contain {
-  margin: 0 auto;
-  padding: 20px;
+  margin: -10px auto;
+  padding: 0px;
 }
 
 .content {
   padding-top: 80px;
 }
 
-.nav {
+/* .nav {
   font-family: Nunito, Helvetica, Arial, sans-serif;
   background-color: var(--med-light);
   position: fixed;
@@ -44,7 +44,7 @@ transition: color 600ms;
 nav a:hover {
   color: var(--med-dark);
   text-decoration: none;
-}
+} */
 
 .header h1 {
   text-align: center;
@@ -129,24 +129,10 @@ li {
 text-transform: uppercase;
 } */
 
-.jumbotron{
-  background-image: url("../img/berlin.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.jumbotron p {
-  color: white;
-}
-
-.jumbotron a {
-  color: var(--bright);
-  font-family: Nunito, Helvetica, Arial, sans-serif;
-}
-
 body {
 background: var(--light);
   color: var(--dark);
+  position: relative;
 }
 
 
@@ -192,13 +178,13 @@ background: var(--light);
 /* .card-body { font-size: 18px; } */
 
 /* positioning of nav bar elements */
-.left {
+/* .left {
   float: left;
 }
 
 .right {
   float: right;
-}
+} */
 
 .carousel-caption {
   font-family: Nunito, Helvetica, Arial, sans-serif;
