@@ -23,15 +23,11 @@
 }
 
 .navbar {
-  font-family: Nunito, Helvetica, Arial, sans-serif !important;
   background-color: var(--bright) !important;
-  position: fixed;
-  display: block;
-  z-index: 999;
-  top: 0;
-  bottom: 95;
-  left: 0;
-  right: 0;
+}
+
+.nav-link {
+  font-family: Nunito, Helvetica, Arial, sans-serif !important;
 }
 
 .navbar-brand {
