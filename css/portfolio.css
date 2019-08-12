@@ -19,22 +19,27 @@
 }
 
 .content {
-  padding-top: 80px;
+  padding-top: 90px;
 }
 
-/* .nav {
-  font-family: Nunito, Helvetica, Arial, sans-serif;
-  background-color: var(--med-light);
+.navbar {
+  font-family: Nunito, Helvetica, Arial, sans-serif !important;
+  background-color: var(--bright) !important;
   position: fixed;
   display: block;
   z-index: 999;
   top: 0;
+  bottom: 95;
   left: 0;
   right: 0;
 }
 
+.navbar-brand {
+  text-transform: uppercase;
+}
 
-nav a {
+
+/* nav a {
 color: var(--dark);
 transition: color 600ms;
 -webkit-transition: color 600ms;//Safari/Chrome
@@ -124,10 +129,10 @@ li {
   -webkit-margin-before: 0;
 }
 
-/* .skill h3 {
-/* text-align: center; */
-text-transform: uppercase;
-} */
+.skill h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
 
 body {
 background: var(--light);
@@ -200,7 +205,8 @@ background: var(--light);
 }
 
 .berlincar {
-  color: var(--bright);
+  bottom: 75%;
+  color: var(--light);
 }
 
 .magiccar {
@@ -210,6 +216,11 @@ background: var(--light);
 }
 
 .chaircar {
+  color: var(--light);
+}
+
+.lavacar {
+  bottom: 75%;
   color: var(--light);
 }
 
@@ -280,6 +291,15 @@ Bootstrap 4 breakpoints
 
 
 h2 {font-size: 20px;}
+
+#contact {
+    background-image: url("../img/moon.jpg"); /*Add a background image*/
+  padding-top: 50px 100px 100px 100px;
+    background-attachment: fixed; /*Give the background a fixed position does it not scroll when you scroll*/
+    background-size: cover; /*Have the background cover the entire div section*/
+    color: white; /*Change the color of the text on top so it is readable and adjust the padding as needed.*/
+    height: 400px;
+}
 
 /*
 ::::::::::::::::::::::::::::::::::::::::::::::::::::
