@@ -8,7 +8,8 @@
   --med-dark: #bc400f;
   /* --med-dark: #73240f; */
   /* --med-light: #e18e78; */
-  --med-light: #e38965;
+  /* --med-light: #e38965; */
+  --med-light: #fa966b;
   /* --light: #ffe6df; */
   --light: #fffdfc;
 }
@@ -244,6 +245,7 @@ text-align:center;
 
 .about{
   margin-top: 10%;
+  margin-bottom: 10%;
   /* margin-left: 2%;
   margin-right: 2%; */
 }
