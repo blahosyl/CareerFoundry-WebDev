@@ -239,6 +239,23 @@ background: var(--light);
 text-align:center;
 }
 
+#cr {
+text-align:center;
+background-color: var(--bright);
+color: var(--light);
+padding-top: 4px;
+padding-bottom: 4px;
+}
+
+#socialmedia {
+text-align:center;
+background-color: var(--med-light);
+}
+
+.fb-like{
+  margin-bottom: 1%;
+}
+
 .workpics{
   margin-top: 10%;
 }
@@ -250,7 +267,19 @@ text-align:center;
   margin-right: 2%; */
 }
 
+.embed-responsive-item{
+  margin-top: 10%;
+  margin-bottom: 10%;
+  /* margin-left: 2%;
+  margin-right: 2%; */
+}
 
+footer{
+  margin-top: 10px;
+  margin-bottom: 10%;
+  /* margin-left: 2%;
+  margin-right: 2%; */
+}
 
 /*
 ####################################################
