@@ -250,6 +250,7 @@ padding-bottom: 4px;
 #socialmedia {
 text-align:center;
 background-color: var(--med-light);
+padding-top: 8px;
 }
 
 .fb-like{
