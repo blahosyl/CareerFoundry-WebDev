@@ -142,6 +142,9 @@ background: var(--light);
   background: var(--med-dark);
   color: var(--light);
   border: var(--dark);
+  margin:0 auto;
+  display:block;
+  margin-top: 16px;
 }
 
 .btn:hover {
@@ -253,6 +256,10 @@ background-color: var(--med-light);
 padding-top: 8px;
 }
 
+form {
+  padding-top: 16px;
+}
+
 .fb-like{
   margin-bottom: 1%;
 }
@@ -322,11 +329,11 @@ h2 {font-size: 20px;}
 
 #contact {
     background-image: url("../img/moon.jpg"); /*Add a background image*/
-  padding-top: 50px 100px 100px 100px;
+  padding-top: 40px;
     background-attachment: fixed; /*Give the background a fixed position does it not scroll when you scroll*/
     background-size: cover; /*Have the background cover the entire div section*/
     color: white; /*Change the color of the text on top so it is readable and adjust the padding as needed.*/
-    height: 400px;
+    height: 440px;
 }
 
 /*
