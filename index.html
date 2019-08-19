@@ -123,6 +123,28 @@
               <li>Editing, proofreading</li>
               <li>Research</li>
             </ul>
+            <!-- Modal -->
+            <div class="container">
+              <div class="row">
+                <button type="button" class="btn btn-primary modal-button" data-toggle="modal" data-target=".bd-example-modal">Resume</button>
+              </div>
+            </div>
+            <div class="modal fade bd-example-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">My resume</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div><!-- end modal-header -->
+                  <div class="modal-body">
+                    <!-- Modal content -->
+                    <embed id="modal-embed" src="img/blaho-resume.pdf">
+                  </div><!-- end modal-body -->
+                </div><!-- end modal-content -->
+              </div><!-- end modal-dialog -->
+            </div><!-- end modal & fade -->
           </div><!--end of col 6 md4-->
           <div class="col-12 col-md-6 about">
             <h2>My story</h2>
@@ -130,7 +152,6 @@
             <p>I thrive in dynamically developing environments, and relish the challenge to learn new skills and to constantly improve workflows, simply for the satisfaction of a job well done, rather than external rewards.</p>
           </div><!--end of col 6 md4-->
         </div><!--end of row work-->
-      </div><!--end of container-->
     </section><!-- end about -->
 
     <section class="container-fluid content" id="contact">
