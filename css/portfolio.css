@@ -14,6 +14,82 @@
   --light: #fffdfc;
 }
 
+.lead {color: var(--bright);
+  }
+
+.btn {
+  background: var(--med-dark);
+  color: var(--light);
+  border: var(--dark);
+}
+
+.btn:hover {
+  background: var(--bright);
+  color: var(--light);
+  border: var(--dark);
+}
+
+body {
+background: var(--light);
+  color: var(--dark);
+}
+
+a {
+color: var(--bright);
+transition: color 600ms;
+-webkit-transition: color 600ms;//Safari/Chrome
+-moz-transition: color 600ms;//Firefox
+}
+
+a:hover {
+  color: var(--med-light);
+  text-decoration: none;
+}
+
+/*Typography*/
+h1,
+h2,
+h3,
+.lead {
+  font-family: Nunito, Helvetica, Arial, sans-serif;
+}
+
+h1 {font-size: 36px;
+text-align: center;
+}
+
+h2 {font-size: 18px;}
+
+p,
+li {
+  font-family: Georgia, Lucida Bright, serif;
+}
+
+/* Layout */
+body {
+background: var(--light);
+  color: var(--dark);
+  position: relative;
+}
+
+.header h1 {
+  text-align: center;
+}
+.column {
+    /* display: inline-block; */
+  float: left;
+}
+
+.image {
+  /* position: relative; */
+  top: 80px;
+  width: 30%;
+}
+
+.image img {
+  width: 100%;
+}
+
 .contain {
   margin: 0 auto;
   padding: 20px;
@@ -35,44 +111,13 @@
   text-transform: uppercase;
 }
 
-
-a {
-color: var(--bright);
-transition: color 600ms;
--webkit-transition: color 600ms;//Safari/Chrome
--moz-transition: color 600ms;//Firefox
-}
-
-a:hover {
-  color: var(--med-light);
-  text-decoration: none;
-}
-
-.header h1 {
-  text-align: center;
-}
-.column {
-    /* display: inline-block; */
-  float: left;
-}
-
-.image {
-  /* position: relative; */
-  top: 80px;
-  width: 30%;
-}
-
-.image img {
-  width: 100%;
-}
-
-
-.linkedin,
-.email,
-.phone {
-  line-height: 1.5;
-  text-align: center;
-  padding-top: 2%;
+#contact {
+    background-image: url("../img/moon.jpg"); /*Add a background image*/
+  padding-top: 40px;
+    background-attachment: fixed; /*Give the background a fixed position does it not scroll when you scroll*/
+    background-size: cover; /*Have the background cover the entire div section*/
+    color: white; /*Change the color of the text on top so it is readable and adjust the padding as needed.*/
+    height: auto;
 }
 
 .skill {
@@ -80,6 +125,12 @@ a:hover {
   color: var(--light);
   width: 33%;
   line-height: 1.5;
+}
+
+.contact-box {
+  line-height: 1.5;
+  text-align: center;
+  padding-top: 2%;
 }
 
 .linkedin {
@@ -102,46 +153,9 @@ a:hover {
   padding-top: 30px;
 }
 
-.sidelinks {
-  padding-left: 10px;
-}
-
-
-/*Typography*/
-h1,
-h2,
-h3,
-.lead {
-  font-family: Nunito, Helvetica, Arial, sans-serif;
-}
-
-p,
-li {
-  font-family: Georgia, Lucida Bright, serif;
-}
-
-.intro p {
-  font-size: 3em;
-  font-weight: 100;
-  -webkit-margin-before: 0;
-}
-
-.skill h3 {
-  text-align: center;
-  text-transform: uppercase;
-}
-
-body {
-background: var(--light);
-  color: var(--dark);
-  position: relative;
-}
-
-
-.btn {
-  background: var(--med-dark);
-  color: var(--light);
-  border: var(--dark);
+/* Contact form */
+form {
+  padding-top: 16px;
 }
 
 #form-btn {
@@ -150,16 +164,7 @@ background: var(--light);
   margin-top: 16px;
 }
 
-.btn:hover {
-  background: var(--bright);
-  color: var(--light);
-  border: var(--dark);
-}
-
-
-.linkedin a,
-.email a,
-.phone a {
+.contact-box a {
   color: var(--light);
   font-family: Nunito, Helvetica, Arial, sans-serif;
 }
@@ -169,15 +174,10 @@ background: var(--light);
   cursor: default;
 }
 
-  div {font-family:  Georgia, Serif;}
-
 .display-4 {color: var(--bright);
   font-weight: 200;
   font-weight: bold;
 }
-
-.lead {color: #f46242;
-  }
 
 /* bootstrap accordion  */
 
@@ -185,15 +185,7 @@ background: var(--light);
 /* .card-header button { color: #ffffff; } */
 /* .card-body { font-size: 18px; } */
 
-/* positioning of nav bar elements */
-/* .left {
-  float: left;
-}
-
-.right {
-  float: right;
-} */
-
+/* Image carousel */
 .carousel-caption {
   font-family: Nunito, Helvetica, Arial, sans-serif;
   /* top: 0;
@@ -207,38 +199,22 @@ background: var(--light);
   padding-top: 65px;
 }
 
-.modal {
-  color: var(--dark);
-  width: auto;
-}
-
-.modal-button {
-  background-color: var(--bright);
-  margin:0 auto;
-  display:block;
-}
-
-#modal-embed {
-  height: 500px;
-  width: 100%;
-}
-
-.berlincar {
+.berlin-car {
   bottom: 75%;
   color: var(--light);
 }
 
-.magiccar {
+.magic-car {
   color: var(--bright);
   bottom: 25%;
   top:auto;
 }
 
-.chaircar {
+.chair-car {
   color: var(--light);
 }
 
-.lavacar {
+.lava-car {
   bottom: 75%;
   color: var(--light);
 }
@@ -251,8 +227,6 @@ background: var(--light);
   background-color: var(--bright);
 }
 
-
-
 #portfolio{
   margin-top: 5%;
 }
@@ -261,6 +235,16 @@ background: var(--light);
 text-align:center;
 }
 
+/* Footer */
+
+footer{
+  margin-top: 10px;
+  margin-bottom: 10%;
+  /* margin-left: 2%;
+  margin-right: 2%; */
+}
+
+/* Copyright */
 #cr {
 text-align:center;
 background-color: var(--bright);
@@ -273,10 +257,6 @@ padding-bottom: 4px;
 text-align:center;
 background-color: var(--med-light);
 padding-top: 8px;
-}
-
-form {
-  padding-top: 16px;
 }
 
 .fb-like{
@@ -301,56 +281,63 @@ form {
   margin-right: 2%; */
 }
 
-footer{
-  margin-top: 10px;
-  margin-bottom: 10%;
-  /* margin-left: 2%;
-  margin-right: 2%; */
+/* Modal window */
+  .modal {
+    color: var(--dark);
+    width: auto;
+  }
+
+  .modal-button {
+    background-color: var(--bright);
+    margin:0 auto;
+    display:block;
+  }
+
+  .modal-button:hover {
+    background-color: var(--med-light);
 }
 
-/*
+  #modal-embed {
+    height: 500px;
+    width: 100%;
+  }
+
+/* Change colours of tooltips */
+.tooltip-inner {
+  background-color: var(--bright);
+  color: var(--light);
+}
+-/*
 ####################################################
 M E D I A  Q U E R I E S
 ####################################################
+Have to stay at the end
 */
-
-h1 {font-size: 30px;
-text-align: center;
-}
-
-
-h2 {font-size: 20px;}
-
-#contact {
-    background-image: url("../img/moon.jpg"); /*Add a background image*/
-  padding-top: 40px;
-    background-attachment: fixed; /*Give the background a fixed position does it not scroll when you scroll*/
-    background-size: cover; /*Have the background cover the entire div section*/
-    color: white; /*Change the color of the text on top so it is readable and adjust the padding as needed.*/
-    height: auto;
-}
-
 /*
 ::::::::::::::::::::::::::::::::::::::::::::::::::::
 Bootstrap 4 breakpoints
 */
 /* Small devices (landscape phones, 544px and up) */
 @media (min-width: 544px) {
-    h2 {font-size: 24px;}
+    h1 {font-size: 36px;}
+    h2 {font-size: 18px;}
   }
 
   /* Medium devices (tablets, 768px and up) */
   @media (min-width: 768px) {
-    h2 {font-size: 30px;}
+    h1 {font-size: 40px;}
+    h2 {font-size: 20px;}
   }
 
   /* Large devices (desktops, 992px and up) */
   @media (min-width: 992px) {
-    h2 {font-size: 40px;}
+    h1 {font-size: 50px;}
+    h2 {font-size: 30px;}
 
   /* Extra large devices (large desktops, 1200px and up) */
   @media (min-width: 1200px) {
-    h2 {font-size: 48px;}
+    h1 {font-size: 60px;}
+    h2 {font-size: 40px;}
   }
 
 /* float modal button right */
