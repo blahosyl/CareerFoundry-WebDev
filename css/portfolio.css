@@ -36,17 +36,17 @@
 }
 
 
-/* nav a {
-color: var(--dark);
+a {
+color: var(--bright);
 transition: color 600ms;
 -webkit-transition: color 600ms;//Safari/Chrome
 -moz-transition: color 600ms;//Firefox
 }
 
-nav a:hover {
-  color: var(--med-dark);
+a:hover {
+  color: var(--med-light);
   text-decoration: none;
-} */
+}
 
 .header h1 {
   text-align: center;

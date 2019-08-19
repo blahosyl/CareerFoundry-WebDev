@@ -126,7 +126,7 @@
             <!-- Modal -->
             <div class="container">
               <div class="row">
-                <button type="button" class="btn btn-primary modal-button" data-toggle="modal" data-target=".bd-example-modal">Resume</button>
+                <button type="button" class="btn btn-primary modal-button" data-toggle="modal" data-target=".bd-example-modal" title="My resume in PDF format">Resume</button>
               </div>
             </div>
             <div class="modal fade bd-example-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -148,7 +148,8 @@
           </div><!--end of col 6 md4-->
           <div class="col-12 col-md-6 about">
             <h2>My story</h2>
-            <p>Having lived in 6 different countries and dealt with colleagues and clients from all over the world, I have developed a great sensitivity for cultural differences and not taking any kind of "common knowledge" for granted. </p>
+            <p>Having lived in 6 different <a href="#" title="Finland, Germany, Hungary, the Netherlands, Norway and Slovakia" id="item1">countries</a>
+ and dealt with colleagues and clients from all over the world, I have developed a great sensitivity for cultural differences and not taking any kind of "common knowledge" for granted. </p>
             <p>I thrive in dynamically developing environments, and relish the challenge to learn new skills and to constantly improve workflows, simply for the satisfaction of a job well done, rather than external rewards.</p>
           </div><!--end of col 6 md4-->
         </div><!--end of row work-->
@@ -190,7 +191,7 @@
             <div class="form-group">
               <label for="form-textbox" class="sr-only">Email address</label>
               <textarea class="form-control" id="form-textbox" style="resize:none" cols="40" rows="5" placeholder="Write your message here*" required></textarea>
-              <button type="submit" class="btn btn-primary" id="form-btn">Submit</button>
+              <button type="submit" class="btn btn-primary" id="form-btn" data-toggle="tooltip" data-placement="bottom" title="Click to send your message">Submit</button>
             </div>
           </div><!--form-box-->
         </div><!--end of row form-->
@@ -351,17 +352,27 @@
     <!-- Can place script tags with JavaScript files here -->
     <!-- smooth scrolling -->
     <script type="text/javascript">
-  var $root = $('html, body');
-  $('#navbar-example a').click(function() {
-    var href = $.attr(this, 'href');
-    if (href != undefined && href != '#') {
-      $root.animate({
-        scrollTop: $(href).offset().top
-      }, 500, function () {
-        window.location.hash = href;
-      });
-    }
-    return false;
+    var $root = $('html, body');
+    $('#navbar-example a').click(function() {
+      var href = $.attr(this, 'href');
+      if (href != undefined && href != '#') {
+        $root.animate({
+          scrollTop: $(href).offset().top
+        }, 500, function () {
+          window.location.hash = href;
+        });
+      }
+      return false;
+    });
+  </script>
+  <script>
+  $(function () {
+    $("#item1").tooltip();
+  });
+</script>
+<script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip();
   });
 </script>
 
