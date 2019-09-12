@@ -25,9 +25,12 @@ $(document).ready(function(){
     var comment = $('.message-box').val();
     var name = $('#form-name').val();
     var email = $('#form-email').val();
-    // var charCount = $(".message-box").val().length;
     if (comment === "") {
       $('.message-box').css("border-color", "red");
+      console.log("message box empty");
+    } else if (email === "") {
+      $('#form-email').css("border-color", "red");
+      console.log("email empty");
     } else {
       $('#visible-comment').html("Thank you for your message! You submitted the following:<br>Name: "+name+"<br>Email: "+email+"<br>Message: "+comment).addClass("form-submitted");
       $('#form-textbox').hide();
@@ -57,6 +60,7 @@ $(document).ready(function(){
       $("#char-count").css("color", "red");
     } else {
       $("#char-count").css("color", "white");
+      console.log("keyup happened");
     };
   });
 
