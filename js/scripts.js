@@ -68,14 +68,24 @@ $(document).ready(function(){
   for(var i = 0; i < works.length; ++i ) {
     $("#work").append('\
     <div class="col-6 col-md-4">\
-    <img class="img-fluid workpics" src="' + works[i] + '">\
+      <a href="' + works[i].url + '" class="work-img">\
+        <img class="img-fluid workpics" src="' + works[i].pic + '">\
+        <span class="info"><p class="proj-title">Title:</p>"' + works[i].title + '"</span>\
+       </a>\
     </div>\
     ');
     var images = $("#work img");
     if(i%2 === 0){
-      $(images[i]).css("border", "2px solid DodgerBlue");
+      $(images[i]).css("border", "2px solid var(--med-dark)");
     } else {
-      $(images[i]).css("border", "2px solid salmon");
+      $(images[i]).css("border", "2px solid var(--bright)");
     };
   };
+  $(".work-img").mouseenter( function() {
+    $(".info", this).show();
+    $(".workpics", this).css("opacity", "0.1");
+  }).mouseleave(function(){
+    $(".info", this).hide();
+    $(".workpics", this).css("opacity", "1");
+  });
 });

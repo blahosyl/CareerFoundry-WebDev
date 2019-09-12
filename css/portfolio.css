@@ -232,12 +232,38 @@ form {
   background-color: var(--bright);
 }
 
+/* Work portfolio */
+
 #portfolio{
   margin-top: 5%;
 }
 
 #portfolio h2{
 text-align:center;
+}
+
+
+.work-img {
+  display: block; /* needed to center the element with margin */
+  margin: auto; /* center the image inside the column if it's smaller */
+  max-width: 200px; /* needs to be set to the width of your image files if they are relatively small */
+  position: relative; /* is needed for .info position: absolute to work */
+}
+
+.info {
+  position: absolute; /* let's us move the text around and not worry about the image */
+  top: 15%; /* position the text 15% away from the top */
+  left: 10%;
+  color: var(--bright);
+  font-family: Futura;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  line-height: 1.6;
+  display: none;
+}
+
+.proj-title {
+  font-weight:100;
 }
 
 /* Footer */
@@ -308,7 +334,7 @@ padding-top: 8px;
   background-color: var(--bright);
   color: var(--light);
 }
--/*
+/*
 ####################################################
 M E D I A  Q U E R I E S
 ####################################################
