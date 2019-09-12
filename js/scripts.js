@@ -68,7 +68,7 @@ $(document).ready(function(){
   for(var i = 0; i < works.length; ++i ) {
     $("#work").append('\
     <div class="col-6 col-md-4">\
-    '+works[i]+'\
+    <img class="img-fluid workpics" src="' + works[i] + '">\
     </div>\
     ');
     var images = $("#work img");
