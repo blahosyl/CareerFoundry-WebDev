@@ -64,4 +64,18 @@ $(document).ready(function(){
     };
   });
 
+  // work section
+  for(var i = 0; i < works.length; ++i ) {
+    $("#work").append('\
+    <div class="col-6 col-md-4">\
+    '+works[i]+'\
+    </div>\
+    ');
+    var images = $("#work img");
+    if(i%2 === 0){
+      $(images[i]).css("border", "2px solid DodgerBlue");
+    } else {
+      $(images[i]).css("border", "2px solid salmon");
+    };
+  };
 });
