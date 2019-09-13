@@ -70,6 +70,15 @@ body {
 background: var(--light);
   color: var(--dark);
   position: relative;
+  height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+  height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .header h1 {
@@ -115,7 +124,8 @@ background: var(--light);
 
 #contact {
     background-image: url("../img/moon.jpg"); /*Add a background image*/
-  padding-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     background-attachment: fixed; /*Give the background a fixed position does it not scroll when you scroll*/
     background-size: cover; /*Have the background cover the entire div section*/
     color: white; /*Change the color of the text on top so it is readable and adjust the padding as needed.*/
@@ -192,6 +202,13 @@ form {
   font-weight: 200;
   font-weight: bold;
 }
+
+/* Map */
+
+#map {
+  height: 300px;
+  width: 100%;
+ }
 
 /* bootstrap accordion  */
 
