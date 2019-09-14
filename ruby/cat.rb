@@ -1,4 +1,4 @@
-class Cat
+class Pet
   attr_reader :color, :breed
   attr_accessor :name #unifies attr_reader and attr_writer (so that attr can be changed)
 
@@ -21,11 +21,23 @@ class Cat
   end
   @hungry
   end
+end
 
+class Cat < Pet
   def speak
     puts "Meow!"
   end
 end
+
+class Dog < Pet
+  def speak
+    puts "Woof!"
+  end
+end
+
+puppy = Dog.new("black", "Poodle")
+puppy.speak
+puts puppy.breed
 
 kitty = Cat.new("grey", "Persian")
 puts "Let's inspect our new cat:"
